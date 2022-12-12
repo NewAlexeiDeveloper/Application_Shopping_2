@@ -1,25 +1,50 @@
 .btn{
-    background-color: $violet-primary;
-    color: $white;
-    padding: 20px 25px;
     display: inline-block;
-    cursor: pointer;
-    border: 2px solid transparent;
+    padding: 20px 25px;
+    background: $gray-dark;
+    color: $white;
     text-align: center;
-    font-size: $font-size-5;
+    cursor: pointer;
+    font-size: 13px;
     font-weight: $font-weight-bold;
-    border-radius: $border-radius;
     margin: 5px 0;
-    transition: background-color .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
-
+    border-radius: 999px;
+    border: 2px solid transparent;
+    transition: all .2s ease-in-out;
     &:hover{
-        color: $violet-primary;
-        background-color: $white;
-        border-color: $violet-primary;
+        color: $gray-dark;
+        background-color: transparent;
+        border-color: $gray-dark;
+    }
+
+    @include medium-up{
+        font-size: $font-size-5;
+    }
+
+    &--outline{
+        background-color: transparent;
+        border-color: $gray-dark;
+        color: $gray-dark;
+
+        &:hover{
+            color: $white;
+            background-color: $gray-dark;
+            border-color: transparent;
+        }
+    }
+
+    &--green{
+        background-color: $green-primary;
+
+        &:hover{
+            color: $green-primary;
+            border-color: $green-primary;
+            background-color: transparent;
+        }
     }
 
     &--small{
-        padding: 12px 20px;
+        padding: 12px 25px;
     }
 }
 
@@ -32,7 +57,7 @@
 
     &:hover{
         svg, path{
-            stroke: $violet-primary;
+            stroke: $gray-dark;
         }
     }
 
