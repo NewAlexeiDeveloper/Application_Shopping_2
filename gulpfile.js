@@ -22,7 +22,7 @@ const paths = {
         dest: './dist'
     },
     img: {
-        src: './src/img/*.*',
+        src: 'img/*.*',
         dest: './dist/img'
     }
 }

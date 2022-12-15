@@ -8,20 +8,146 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/all.js" defer></script>
-    <title>Shopping application</title>
+    <title>Shopping application 2</title>
 </head>  
 <body>
-    <!-- <div class="overlay hidden" id="overlay"></div> -->
+    <div class="overlay hidden" id="overlay"></div>
     <!-- HEADER --> 
     <header class="header">
-        <button class="btn"></button>
-        <button class="btn btn--outline"></button>
-        <button class="btn btn--green"></button>
-        <button class="btn btn--small"></button>
+        <div class="container">
+            <div class="flex wrapper">
+                <a href="#" class="header__logo-wrapper">
+                    <img src="/img/payomatic-logo.svg" class="logo" alt="">
+                </a>
+
+                <nav class="navigation--desktop">
+                    <ul>
+                        <li><a href="#" class="active">Main page</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="btn btn--small btn--green header__btn">Get App</a>
+
+                <button id="show-menu" class="btn-menu">
+                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.6" d="M0.124103 1.33333C0.124103 0.596954 0.721057 0 1.45744 0H18.6667C19.403 0 20 0.596954 20 1.33333C20 2.06971 19.403 2.66667 18.6667 2.66667H1.45744C0.721056 2.66667 0.124103 2.06971 0.124103 1.33333ZM0 8C0 7.26362 0.596954 6.66667 1.33333 6.66667H18.6667C19.403 6.66667 20 7.26362 20 8C20 8.73638 19.403 9.33333 18.6667 9.33333H1.33333C0.596955 9.33333 0 8.73638 0 8ZM0 14.6667C0 13.9303 0.596953 13.3333 1.33333 13.3333H18.6667C19.403 13.3333 20 13.9303 20 14.6667C20 15.403 19.403 16 18.6667 16H1.33333C0.596953 16 0 15.403 0 14.6667Z" fill="#737373"></path>
+                    </svg>
+                </button>
+                <button class="btn-menu none" id="hide-menu">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.1725 7.999L0.5865 3.413C-0.1955 2.633 -0.1955 1.365 0.5865 0.585C1.3665 -0.195 2.6345 -0.195 3.4145 0.585L8.0005 5.171L12.5865 0.585C13.3665 -0.195 14.6345 -0.195 15.4145 0.585C16.1945 1.365 16.1945 2.633 15.4145 3.413L10.8285 7.999L15.4145 12.585C16.1945 13.365 16.1945 14.633 15.4145 15.413C14.6345 16.193 13.3665 16.193 12.5865 15.413L8.0005 10.827L3.4145 15.413C2.6345 16.193 1.3665 16.193 0.5865 15.413C-0.1955 14.633 -0.1955 13.365 0.5865 12.585L5.1725 7.999Z" fill="#5956E9"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="navigation--mobile hidden" id="menu-mobile">
+                <div class="menu">
+                    <nav>
+                        <ul class="menu__list">
+                            <li><a href="#" class="active">Main page</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu__cta">
+                        <a href="#" class="btn btn--small btn--green">Get App</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </header>
     <!-- MAIN -->
     <main>
+        <!-- showcase -->
+        <section class="showcase">
+            <div class="container grid">
+                <div class="showcase__content">
+                    <span class="label">Go with time</span>
+                    <h1 class="heading heading--1">Easy shopping. Harmony of your money</h1>
+                    <p>Take a look at how you can make purchases and take care about money with Paytomatic</p>
+                    <div class="showcase__content-buttons">
+                        <a href="#" class="btn">Get app</a>
+                        <a href="#" class="btn btn--outline">Learn more</a>
+                    </div>
+                </div>
+                <img src="img/showcase-desktop.png" alt="" class="u-img--desktop showcase__img">
+                <img src="img/showcase-mobile.png" alt="" class="u-img--mobile showcase__img">
+            </div>
+        </section>
 
+        <!-- functions -->
+        <section class="functions">
+            <div class="container">
+                <div class="u-text-center">
+                    <span class="label">All what you need</span>
+                    <h2 class="heading heading--2">Impressive <br \> Paytomatic functions</h2>
+                </div>
+
+                <div class="grid">
+                    <div class="functions__item">
+                        <img src="img/function-1.png" alt="">
+                        <h3 class="heading heading--3">Multicurrency account</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem? Neque possimus obcaecati fugiat quas reprehenderit est pariatur fuga laborum.</p>
+                    </div>
+                    <div class="functions__item">
+                        <img src="img/function-2.png" alt="">
+                        <h3 class="heading heading--3">Paytomatic card</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem? Neque possimus obcaecati fugiat quas reprehenderit est pariatur fuga laborum.</p>
+                    </div>
+                    <div class="functions__item">
+                        <img src="img/function-3.png" alt="">
+                        <h3 class="heading heading--3">Money transfer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem? Neque possimus obcaecati fugiat quas reprehenderit est pariatur fuga laborum.</p>
+                    </div>
+                    <div class="functions__item">
+                        <img src="img/function-4.png" alt="">
+                        <h3 class="heading heading--3">Instant cashback</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem? Neque possimus obcaecati fugiat quas reprehenderit est pariatur fuga laborum.</p>
+                    </div>
+                    <div class="functions__item">
+                        <img src="img/function-5.png" alt="">
+                        <h3 class="heading heading--3">Gpay</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem? Neque possimus obcaecati fugiat quas reprehenderit est pariatur fuga laborum.</p>
+                    </div>
+                    <div class="functions__item">
+                        <img src="img/function-6.png" alt="">
+                        <h3 class="heading heading--3">Apple pay</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem? Neque possimus obcaecati fugiat quas reprehenderit est pariatur fuga laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- shopping -->
+        <section class="shopping">
+            <div class="container">
+                <div class="grid">
+                    <div class="shopping__content">
+                        <span class="label">Shopping online with reasonable prices</span>
+                        <h2 class="heading heading--1">Easy shopping. Harmony of your money</h2>
+                        <p>Take a look at how you can make purchases and take care about money with Paytomatic</p>
+                        <a href="#" class="btn btn--outline">Learn more</a>
+                    </div>
+                    <img src="img/payment-desktop.png" alt="" class="u-img--desktop">
+                    <img src="img/payment-mobile.png" alt="" class="u-img--mobile">
+                </div>
+                <div class="grid">
+                    <img src="img/card-desktop.png" alt="" class="u-img--desktop">
+                    <div class="shopping__content">
+                        <span class="label">Don't overpay for shopping</span>
+                        <h2 class="heading heading--1">Easy shopping. Harmony of your money</h2>
+                        <p>Take a look at how you can make purchases and take care about money with Paytomatic</p>
+                        <a href="#" class="btn btn--outline">Learn more</a>
+                    </div>
+                    <img src="img/card-mobile.png" alt="" class="u-img--mobile">
+                </div>
+            </div>
+        </section>
     </main>
 
     
@@ -30,16 +156,16 @@
             <div class="footer__logo">
                 <a href="#" class="footer__logo-wrapper">
                     <img src="/img/payomatic-logo.svg" class="logo" alt="">
-                    <img src="../Project2/img/card-mobile.png" alt="">
                 </a>
                 <p>Gdańsk, 34-000, ul.Światowa 3</p>
-            </div>
+              
+            </div> 
 
             <div class="footer__text">
                 <p>&copy Paytomatic. All rights reserved.</p>
                 <p>Images are used for illustration purposes only</p>
             </div>
-        </div>
+        </div>  
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

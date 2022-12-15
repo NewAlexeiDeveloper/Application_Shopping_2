@@ -1,0 +1,135 @@
+.showcase{
+    padding-bottom: 30px;
+
+    @include medium-up{
+        padding-bottom: 100px;
+    }
+
+    &__content{
+        & h1{
+            margin-bottom: 14px;
+
+            @include medium-up{
+                margin-bottom: 20px;
+            }
+        }
+
+        & p{
+            margin-bottom: 30px;
+            font-size: $font-size-5;
+
+            @include medium-up{
+                margin-bottom: 50px;
+                @include paragraph;
+            }
+        }
+
+        &-buttons{
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: space-around;
+            @include medium-up{
+                display: block;
+            }
+            
+            & .btn{
+                margin-right: 20px;
+                font-size: 13px;
+
+                @include medium-up{
+                    font-size: $font-size-5;
+                }
+            }
+        }
+
+    }
+    & .grid{
+        grid-template-columns: 1fr;
+
+        @include medium-up{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.functions{
+    background-color: $white;
+
+    padding: 43px 0;
+
+    @include medium-up{
+        padding: 70px 0;
+    }
+
+    & .grid{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 30px 0;
+        
+        @include medium-up{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 80px;
+            padding-top: 70px;
+        }
+    }
+
+    & .item{
+        p {
+            font-size: $font-size-5;
+        }
+    }
+}
+
+.shopping{
+    background-color: $white;
+
+    padding-top: 43px 0;
+
+    @include medium-up{
+        padding-top: 70px 0;
+    }
+
+    & .grid{
+        gap: 30px;
+        grid-template-columns: 1fr;
+
+        & a{
+            width: 100%;
+
+            @include medium-up{
+                width: unset;
+            }
+        }
+        
+        @include medium-up{
+            gap: 70px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &:first-child{
+            padding-bottom: 70px;
+            @include medium-up{
+                padding-bottom: 150px;
+            }
+        }
+        &:last-child{
+            border-bottom: 1px solid #C4D1E6;
+        }
+    }
+
+    h2 {
+        margin-bottom: 20px;
+
+        @include medium-up{
+            margin-bottom: 40px;
+        }
+    }
+
+    p{
+        margin-bottom: 30px;
+        @include medium-up{
+            @include paragraph;
+        }
+    }
+}

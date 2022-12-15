@@ -1,6 +1,7 @@
 .footer{
     padding: 55px 0;
-
+    background-color: $white;
+    
     @include medium-up{
         padding: 60px 0;
     }
